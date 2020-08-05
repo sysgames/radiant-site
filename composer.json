@@ -1,0 +1,11 @@
+{
+    "name": "ipanja/radiant",
+    "version": "1.0.0",
+    "require": {
+        "monolog/monolog": "1.0.*",
+        "firebase/php-jwt": "^5.2",
+        "slim/slim": "4.*",
+        "slim/psr7": "^1.1",
+        "php-di/php-di": "^6.2"
+    }
+}
