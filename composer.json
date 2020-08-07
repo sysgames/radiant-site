@@ -6,6 +6,15 @@
         "firebase/php-jwt": "^5.2",
         "slim/slim": "4.*",
         "slim/psr7": "^1.1",
-        "php-di/php-di": "^6.2"
+        "php-di/php-di": "^6.2",
+        "selective/basepath": "^1.0",
+        "ext-PDO": "^7.4",
+        "tuupola/slim-jwt-auth": "^3.4",
+        "vlucas/phpdotenv": "^5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
     }
 }
