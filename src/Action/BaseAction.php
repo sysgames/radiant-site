@@ -24,7 +24,7 @@ abstract class BaseAction{
             'message' => $message,
         ];
         $response->getBody()->write(json_encode($result));
-        return $response->withHeader('Content-Type', 'application/json');
+        return $response->withHeader('Content-Type', 'application/json')->withStatus($code);
         //return $response->withJson($result, $code, JSON_PRETTY_PRINT);
     }
 }

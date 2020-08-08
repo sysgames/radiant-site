@@ -1,4 +1,7 @@
 <?php
+/*
+    Depreciated
+*/
 namespace App\Action\Auth;
 
 use \Firebase\JWT\JWT;

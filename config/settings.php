@@ -7,7 +7,7 @@ date_default_timezone_set('America/New_York');
 return function(Container $container){
     $container->set('settings', function() {
         return [
-            'name' => 'Radiant API',
+            'domain' => 'panjaco.com',
             'error' => [
                 'display_error_details' => true,
                 'log_error_details' => true,
@@ -29,8 +29,11 @@ return function(Container $container){
                 'r_lifetime' => 172800, //2 days
                 'secret' => 'my_very_super_99secret_key',
             ],
+            'about' => [
+                'name' => 'Radiant API',
+                'version' => '0.1.0',
+            ],
             'root' => dirname(__DIR__ . '/../'),
-            'name' => 'Radiant API',
         ];
     });
 };

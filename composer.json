@@ -10,7 +10,8 @@
         "selective/basepath": "^1.0",
         "ext-PDO": "^7.4",
         "tuupola/slim-jwt-auth": "^3.4",
-        "vlucas/phpdotenv": "^5.1"
+        "vlucas/phpdotenv": "^5.1",
+        "dflydev/fig-cookies": "^2.0"
     },
     "autoload": {
         "psr-4": {

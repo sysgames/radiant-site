@@ -61,6 +61,7 @@ class ComposerStaticInitc1ffbdd798c398994e6d18fbf07809da
         'D' => 
         array (
             'Dotenv\\' => 7,
+            'Dflydev\\FigCookies\\' => 19,
             'DI\\' => 3,
         ),
         'A' => 
@@ -157,6 +158,10 @@ class ComposerStaticInitc1ffbdd798c398994e6d18fbf07809da
         array (
             0 => __DIR__ . '/..' . '/vlucas/phpdotenv/src',
         ),
+        'Dflydev\\FigCookies\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/dflydev/fig-cookies/src/Dflydev/FigCookies',
+        ),
         'DI\\' => 
         array (
             0 => __DIR__ . '/..' . '/php-di/php-di/src',
@@ -179,10 +184,12 @@ class ComposerStaticInitc1ffbdd798c398994e6d18fbf07809da
 
     public static $classMap = array (
         'App\\Action\\Auth\\LoginAction' => __DIR__ . '/../..' . '/src/Action/Auth/LoginAction.php',
+        'App\\Action\\Auth\\RefreshAction' => __DIR__ . '/../..' . '/src/Action/Auth/RefreshAction.php',
         'App\\Action\\Auth\\TokenCreateAction' => __DIR__ . '/../..' . '/src/Action/Auth/TokenCreateAction.php',
         'App\\Action\\BaseAction' => __DIR__ . '/../..' . '/src/Action/BaseAction.php',
         'App\\Action\\HomeAction' => __DIR__ . '/../..' . '/src/Action/HomeAction.php',
-        'App\\Action\\Users' => __DIR__ . '/../..' . '/src/Action/Users.php',
+        'App\\Action\\Player\\GetOne' => __DIR__ . '/../..' . '/src/Action/Player/GetOne.php',
+        'App\\Action\\Player\\Search' => __DIR__ . '/../..' . '/src/Action/Player/Search.php',
         'App\\Middleware\\JwtAuthMiddleware' => __DIR__ . '/../..' . '/src/Middleware/JwtAuthMiddleware.php',
         'App\\Repository\\BaseRepository' => __DIR__ . '/../..' . '/src/Repository/BaseRepository.php',
         'App\\Repository\\UserRepository' => __DIR__ . '/../..' . '/src/Repository/UserRepository.php',
@@ -244,6 +251,14 @@ class ComposerStaticInitc1ffbdd798c398994e6d18fbf07809da
         'DI\\Invoker\\FactoryParameterResolver' => __DIR__ . '/..' . '/php-di/php-di/src/Invoker/FactoryParameterResolver.php',
         'DI\\NotFoundException' => __DIR__ . '/..' . '/php-di/php-di/src/NotFoundException.php',
         'DI\\Proxy\\ProxyFactory' => __DIR__ . '/..' . '/php-di/php-di/src/Proxy/ProxyFactory.php',
+        'Dflydev\\FigCookies\\Cookie' => __DIR__ . '/..' . '/dflydev/fig-cookies/src/Dflydev/FigCookies/Cookie.php',
+        'Dflydev\\FigCookies\\Cookies' => __DIR__ . '/..' . '/dflydev/fig-cookies/src/Dflydev/FigCookies/Cookies.php',
+        'Dflydev\\FigCookies\\FigRequestCookies' => __DIR__ . '/..' . '/dflydev/fig-cookies/src/Dflydev/FigCookies/FigRequestCookies.php',
+        'Dflydev\\FigCookies\\FigResponseCookies' => __DIR__ . '/..' . '/dflydev/fig-cookies/src/Dflydev/FigCookies/FigResponseCookies.php',
+        'Dflydev\\FigCookies\\Modifier\\SameSite' => __DIR__ . '/..' . '/dflydev/fig-cookies/src/Dflydev/FigCookies/Modifier/SameSite.php',
+        'Dflydev\\FigCookies\\SetCookie' => __DIR__ . '/..' . '/dflydev/fig-cookies/src/Dflydev/FigCookies/SetCookie.php',
+        'Dflydev\\FigCookies\\SetCookies' => __DIR__ . '/..' . '/dflydev/fig-cookies/src/Dflydev/FigCookies/SetCookies.php',
+        'Dflydev\\FigCookies\\StringUtil' => __DIR__ . '/..' . '/dflydev/fig-cookies/src/Dflydev/FigCookies/StringUtil.php',
         'Dotenv\\Dotenv' => __DIR__ . '/..' . '/vlucas/phpdotenv/src/Dotenv.php',
         'Dotenv\\Exception\\ExceptionInterface' => __DIR__ . '/..' . '/vlucas/phpdotenv/src/Exception/ExceptionInterface.php',
         'Dotenv\\Exception\\InvalidEncodingException' => __DIR__ . '/..' . '/vlucas/phpdotenv/src/Exception/InvalidEncodingException.php',

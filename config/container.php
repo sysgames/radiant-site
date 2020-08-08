@@ -46,7 +46,15 @@ return [
         }
 
         return $connection;
-    }
+    },
+    App::class => function (ContainerInterface $container) {
+        AppFactory::setContainer($container);
+
+        return AppFactory::create();
+    },
+    ResponseFactoryInterface::class => function (ContainerInterface $container) {
+        return $container->get(App::class)->getResponseFactory();
+    },
     /*
     BasePathMiddleware::class => function(ContainerInterface $container){
         return new BasePathMiddleware($container->get(App::class));
